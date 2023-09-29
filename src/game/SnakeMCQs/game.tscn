@@ -1,0 +1,83 @@
+[gd_scene load_steps=16 format=3 uid="uid://c2yvwqiplvx0o"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1_4nmm2"]
+[ext_resource type="Texture2D" uid="uid://bdro3hd0ws85e" path="res://SnakeCF/A.png" id="2_3wy6h"]
+[ext_resource type="Texture2D" uid="uid://b2iq05f818f02" path="res://SnakeCF/B.png" id="3_cgo3e"]
+[ext_resource type="Texture2D" uid="uid://rj4lj7jdfy37" path="res://SnakeCF/C.png" id="4_syyil"]
+[ext_resource type="Texture2D" uid="uid://becdp7t5qqwgb" path="res://SnakeCF/D.png" id="5_1t74n"]
+[ext_resource type="Texture2D" uid="uid://cbyslxl8j6r35" path="res://SnakeCF/SNAKE.png" id="6_r0ce2"]
+[ext_resource type="Texture2D" uid="uid://cgjhc7y5fs13d" path="res://SnakeCF/apple.png" id="7_2h1jk"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_023mw"]
+texture = ExtResource("2_3wy6h")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rgteb"]
+texture = ExtResource("3_cgo3e")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_415ap"]
+texture = ExtResource("4_syyil")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v4345"]
+texture = ExtResource("5_1t74n")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ca2q8"]
+tile_size = Vector2i(40, 40)
+sources/0 = SubResource("TileSetAtlasSource_023mw")
+sources/1 = SubResource("TileSetAtlasSource_rgteb")
+sources/2 = SubResource("TileSetAtlasSource_415ap")
+sources/3 = SubResource("TileSetAtlasSource_v4345")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hk6fh"]
+texture = ExtResource("6_r0ce2")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:0/0 = 0
+7:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3hhct"]
+texture = ExtResource("7_2h1jk")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_iihlp"]
+tile_size = Vector2i(40, 40)
+sources/0 = SubResource("TileSetAtlasSource_hk6fh")
+sources/1 = SubResource("TileSetAtlasSource_3hhct")
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_4nmm2")
+
+[node name="options" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ca2q8")
+format = 2
+
+[node name="SnakeApple" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_iihlp")
+format = 2
+
+[node name="Snaketick" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="Snaketick" to="." method="_on_snaketick_timeout"]

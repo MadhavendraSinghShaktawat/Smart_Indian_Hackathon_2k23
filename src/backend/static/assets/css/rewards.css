@@ -1,0 +1,141 @@
+/* -- */
+/* general styles */
+/* -- */
+body {font-family: 'Mina', sans-serif;}
+.row{ max-width: 82.5rem; }
+h1, h2, h3, h4, h5, small, p { margin: 0; padding: 0; font-family: 'Mina', sans-serif;}
+img {width: 60px; max-width: 60px; margin-bottom: 10px;}
+@media only screen and (max-width: 400px) {
+  img {width: 30px;}
+}
+h2 {font-weight: bold;}
+.button {background: #a02fff;color: #fff;border-color: #a02fff;border-width: 2px;color: #fff; font-size: 1.7em;font-weight: bold; font-family: 'Mina', sans-serif; vertical-align: middle;}
+.button:hover {background: #fff;color: #a02fff;}
+section { clear: both;  margin-bottom: 100px; background: #fff}
+.highlight {color: #a02fff;}
+.center {text-align:center;}
+
+/* -- */
+/* heading styles */
+/* -- */
+h2.header {text-align: center; border-bottom: 7px solid #a02fff; margin-bottom: 25px; font-size: 1.8em; display: inline-block;}
+.earn h2, .earn h3, .spend h2, .spend h3 {line-height: 1;}  
+.earn h3, .spend h3 {font-size: 1em; font-weight: bold; margin-bottom: 10px;}
+
+/* -- */
+/* page header styles */
+/* -- */
+section.header, section.refer-a-friend {text-align:center; margin-bottom: 50px; padding: 45px 25px; background: url('https://cdn.shopify.com/s/files/1/0739/9215/files/974593e6-457e-49b0-9c6b-8ae7b88981e6.gif?4644854711361502759'); background-size: contain; position: relative;}
+section.header .button {margin: 0 0 10px 0; padding: 10px;}
+section.header .reaper {position: absolute;right: 0;top: 75px;}
+.reaper img {height: 200px; max-width: 300px; width: auto; }
+@media only screen and (max-width: 940px) {
+  .reaper {display: none;} 
+}
+section.header h1, section.refer-a-friend h2 {font-size: 3.5em; font-weight: bold; color: #fff; text-transform: uppercase;}
+section.header p {color: #fff; font-size: 18px; max-width: 700px; margin: 0 auto 30px;}
+
+/* -- */
+/* earn bones */
+/* -- */
+
+.earn .flex-items { 
+  flex-direction:row;
+  flex-wrap:wrap;
+  display:flex;
+  flex: 1 1 0%;
+}
+.earn .item {
+  width: calc(33.333% - 10px);  /* Or whatever */
+  margin: 0 auto;  /* Magic! */
+  background: #f2f2f2;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.earn small {font-size: 12px;}
+@media only screen and (max-width: 640px) {
+  .earn .flex-items {margin-bottom: 30px;}
+  .earn .item {
+    width: calc(50% - 10px);  /* Or whatever */
+  }
+}
+@media only screen and (max-width: 335px) {
+  .earn .item {
+    width: calc(100% - 10px);  /* Or whatever */
+  }
+}
+
+/* -- */
+/* spend bones */
+/* -- */
+.spend img {
+  margin-bottom: 0;
+  width: 75px; max-width: 75px;
+}
+.spend .item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: centetr;
+  align-content: stretch;
+  align-items: center;
+  margin-bottom: 40px;
+/*   border: 1px solid red; */
+}
+.spend .item-icon, .spend .item-info {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
+/*   padding: 10px 20px; */
+}
+.spend .item-icon {
+  flex: 0 1 30%;
+  text-align: center;
+/*   border: 1px solid blue; */
+}
+.spend .item-info {
+  justify-self: center;
+  align-self: center;
+  flex: 1 1 auto;
+  text-align: left;
+/*   border: 1px solid orange; */
+}
+@media only screen and (max-width: 640px) {
+  .spend .item {flex-direction: column;}
+  .spend .item-info {text-align: center;}
+}
+.spend .item-info h3 {margin-bottom: 10px;}
+.spend p {line-height: 1;}
+
+/* -- */
+/* VIP */
+/* -- */
+.vip {margin-top: 70px;}
+
+/* -- */
+/* table styles */
+/* -- */
+table {width: 100%; border: none;border-bottom: 15px solid black;}
+table th {border-bottom: 15px solid black;}
+table th:not(:first-child), table tr td:not(:first-child) {text-align: center;}
+table th:first-child > h3 {display: block !important;}
+table th img {width: 150px; max-width: 150px;}
+@media only screen and (max-width: 640px) {
+  table th img {width: 60px; max-width: 60px;}
+}
+table tr td {padding: 20px; font-size: 1em;}
+table h3 {font-weight: bold; line-height: 1; font-size: 1.7em; margin-bottom: 10px;}
+
+
+/* -- */
+/* refer a friend styles */
+/* -- */
+section.refer-a-friend {color: #fff; margin-bottom: 0;}
+section.refer-a-friend h2 {color: #c6ffda; }
+.refer-a-friend p {width: 50%; margin: 0 auto 15px;}
+
+/* -- */
+/* responsive tables foundation */
+/* -- */
+table th{font-weight:700}table td,table th{padding:9px 10px;text-align:left}@media only screen and (max-width: 767px){table.responsive{margin-bottom:0}.pinned{position:absolute;left:0;top:0;background:#fff;width:35%;overflow:hidden;overflow-x:scroll;border-right:1px solid #ccc;border-left:1px solid #ccc}.pinned table{border-right:none;border-left:none;width:100%}.pinned table th,.pinned table td{white-space:nowrap}.pinned td:last-child{border-bottom:0}div.table-wrapper{position:relative;margin-bottom:20px;overflow:hidden;border-right:1px solid #ccc}div.table-wrapper div.scrollable table{margin-left:35%}div.table-wrapper div.scrollable{overflow:scroll;overflow-y:hidden}table.responsive td,table.responsive th{position:relative;white-space:nowrap;overflow:hidden}table.responsive th:first-child,table.responsive td:first-child,table.responsive td:first-child,table.responsive.pinned td{display:none}}

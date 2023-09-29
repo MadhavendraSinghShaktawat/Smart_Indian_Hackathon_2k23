@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "question": "This is a sample question",
+            "options": [
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "What's the 'Safe Touch' rule?",
+            "options": [
+                "Option A) Hug everyone you meet",
+                "Option B) Let anyone touch you however they want",
+                "Option C) Only allow trusted adults to touch you in ways that keep you safe and comfortable",
+                "Option D) Touch others without asking"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "How can you stay safe when you're home alone?",
+            "options": [
+                "A) Open the door for anyone who knocks",
+                "B) Call a trusted adult if there's an emergency",
+                "C) Play video games loudly",
+                "D) Invite friends over to your house"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What's the right way to cross a road safely?",
+            "options": [
+                "A) Run across as fast as you can",
+                "B) Cross anywhere you like",
+                "C) Look both ways, use a crosswalk or traffic signal, and wait for the signal to cross",
+                "D) Ask someone to carry you across"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "How can you be safe when using the internet and social media?",
+            "options": [
+                "A) Share personal information online with friends",
+                "B) Talk to strangers online and make new friends",
+                "C) Don't share personal information online, and tell a trusted adult if something online makes you uncomfortable",
+                "D) Post pictures of your school and home online"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "What's the 'stranger danger' rule?",
+            "options": [
+                "A) Be cautious around people you know well",
+                "B) Talk to strangers and make new friends",
+                "C) Always go with strangers when they offer you something",
+                "D) Be cautious around people you don't know and don't go anywhere with them"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "What should you do if you get lost in a crowded place like a market?",
+            "options": [
+                "A) Run around looking for your parents",
+                "B) Find a security guard or police officer and tell them your parents' phone number or home address",
+                "C) Hide and wait for someone to find you",
+                "D) Start crying loudly"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the importance of reporting bullying or harassment to adults or teachers?",
+            "options": [
+                "A) To get someone in trouble",
+                "B) To make your friends laugh",
+                "C) To ensure your safety and stop the bullying from happening",
+                "D) To keep it a secret"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "What is 'Child Labor,' and why is it wrong?",
+            "options": [
+                "A) Child Labor is when children work to earn money for themselves, and it's not wrong",
+                "B) Child Labor is when children work in jobs that are dangerous or keep them from going to school, and it's wrong because it can harm them",
+                "C) Child Labor is when children do their homework at home, and it's wrong because they should do it at school",
+                "D) Child Labor is when children work on fun projects and get paid, and it's not wrong"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What does the term 'Child Rights' mean?",
+            "options": [
+                "A) It means having the right to stay up late and play video games",
+                "B) It means having the right to be treated fairly and with respect as a child",
+                "C) It means having the right to eat all the candy you want",
+                "D) It means having the right to skip school whenever you want"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the 'Right to Education,' and why is it important?",
+            "options": [
+                "A) The Right to Education means kids can choose whether or not to go to school, and it's not important",
+                "B) The Right to Education means every child has the right to go to school and get an education, and it's important because education helps kids have a better future",
+                "C) The Right to Education means kids can decide what they want to learn, and it's not important",
+                "D) The Right to Education means only rich kids can go to school, and it's not important"
+            ],
+            "answer": 1
+        }
+    ]
+}
